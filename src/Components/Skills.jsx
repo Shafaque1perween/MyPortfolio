@@ -41,7 +41,7 @@ function Skills() {
                 </div>
             </div>
             <div className='flex justify-center items-center'>
-                <div className='grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 flex-row lg:justify-center justify-between items-center py-2 px-2  md:py-8 md:px-10   gap-3 md:gap-20 lg:gap-10'>
+                <div className='grid  lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 grid-cols-1  flex-row lg:justify-center justify-between items-center py-2 px-2  md:py-8 md:px-10   gap-3 md:gap-20 lg:gap-10'>
                     {renderSkills}
                 </div>
 

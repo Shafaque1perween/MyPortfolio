@@ -9,7 +9,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 
 function Footer() {
     return (
-        <div className='bg-gray-950 text-gray-200 w-full px-20 py-6 '>
+        <div className='bg-gray-950 text-gray-200 w-full px-12 py-6 '>
             <div className='bg-gray-900 px-8 py-4 w-full flex-col md:flex-row flex justify-start items-start lg:gap-4 gap-6 border-b-2 border-b-gray-500'>
                 <div className='md:w-[25%] w-full flex flex-col justify-start items-start  px-4 py-2 gap-5'>
 

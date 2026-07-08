@@ -3,7 +3,7 @@ import { FaLaptopCode } from 'react-icons/fa'
 
 const SkillCard = ({icon:Icon,name,tag1, tag2, tag3,tag4,tag5 }) => {
     return (
-        <div className='bg-white sm:h-90 h-85 sm:w-65 w-52 mg:px-4 py-2 gap-6 border-purple-300 border-2 rounded-2xl flex-col justify-center items-center'>
+        <div className='bg-white sm:h-90 h-85 w-65  mg:px-4 py-2 gap-6 border-purple-300 border-2 rounded-2xl flex-col justify-center items-center'>
             <div className='flex flex-col justify-center items-center px-4 py-2 gap-3'>
                 <div className='bg-purple-200 w-15 h-15 rounded-full flex justify-center items-center'>
                     
