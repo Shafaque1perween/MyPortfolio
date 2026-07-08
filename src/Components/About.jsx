@@ -30,7 +30,7 @@ const About = () => {
     })
     return (
 
-        <div className='  py-6 lg:px-20 px-8  flex flex-col justify-center items-center w-full ' id='About'>
+        <div className='  py-6 lg:px-20 px-8  flex flex-col justify-center items-center w-full  border-b border-b-purple-300 ' id='About'>
 
             {/* heading */}
             <div className='flex justify-center items-center text-center w-full h-8'>

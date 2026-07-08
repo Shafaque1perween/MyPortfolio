@@ -12,7 +12,7 @@ import { LuDownload } from "react-icons/lu";
 
 const Hero = () => {
     return (
-        <div className=' flex justify-center items-center lg:px-20 px-4   sm:py-2  w-full min-h-120 ' id='home'>
+        <div className=' flex justify-center items-center lg:px-20 px-4   sm:py-2  w-full min-h-120 border-b border-b-purple-300 ' id='home'>
             {/* hero-rightside-content-start    */}
             <div className='  flex flex-col justify-between gap-4 px-4 pt-20 min-h-80  md:w-[60%] w-full '>
 
@@ -28,8 +28,8 @@ const Hero = () => {
                 </div>
                 {/* contact button */}
                 <div className='flex items-center justify-start gap-2'>
-                    <a href='https://gym-web-ivory-eta.vercel.app' className='bg-purple-800    text-white flex lg:gap-3 gap-1 rounded-2xl lg:px-6  px-1  py-2 hover:bg-purple-900 cursor-pointer '>View My Work<span className=' text-xl py-1 '><GoArrowRight /></span></a>
-                    <a href='/Shafaque Perween_.pdf' download className='flex justify-center lg:gap-3 gap-1 lg:px-6  px-2 py-2 rounded-2xl  bg-purple-800 text-white hover:bg-purple-900  '>Download Cv<span className='  text-xl py-1'><LuDownload /></span></a>
+                    <a href='https://gym-web-ivory-eta.vercel.app' className='bg-purple-800    text-white flex lg:gap-3 gap-1 rounded-2xl lg:px-6  px-3  py-2 hover:bg-purple-900 cursor-pointer '>View My Work<span className=' text-xl py-1 '><GoArrowRight /></span></a>
+                    <a href='/Shafaque Perween_.pdf' download className='flex justify-center lg:gap-3 gap-1 lg:px-6  px-3 py-2 rounded-2xl  bg-purple-800 text-white hover:bg-purple-900  '>Download Cv<span className='  text-xl py-1'><LuDownload /></span></a>
 
                 </div>
                 {/* icons button */}

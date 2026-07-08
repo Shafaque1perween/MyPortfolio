@@ -25,7 +25,7 @@ function Skills() {
         )
     })
     return (
-        <div className='  w-full h-full lg:px-20 px-6 py-2 lg:py-6 ' id='skills'>
+        <div className='  w-full h-full lg:px-20 px-6 py-2 lg:py-6 border-b border-b-purple-300 ' id='skills'>
             <div className=' h-full w-full gap-3 '>
                 <div className='flex justify-center items-center gap-2'>
                     <span className='h-1 w-1 bg-purple-600 rounded-full'></span>
