@@ -11,7 +11,7 @@ function Footer() {
     return (
         <div className='bg-gray-950 text-gray-200 w-full px-12 py-6 '>
             <div className='bg-gray-900 px-8 py-4 w-full flex-col md:flex-row flex justify-start items-start lg:gap-4 gap-6 border-b-2 border-b-gray-500'>
-                <div className='bg-amber-900 md:w-[25%] w-full flex flex-col justify-start items-start py-2 gap-5'>
+                <div className=' md:w-[25%] w-full flex flex-col justify-start items-start py-2 gap-5'>
 
                     <div className='flex flex-1  justify-items-start items-center text-center gap-3'>
                         <IoCodeSlash className='text-purple-600 font-bold text-2xl' />
@@ -35,7 +35,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='md:w-[20%] w-full bg-amber-400 '>
+                <div className='md:w-[20%] w-full  '>
                     <h1 className='flex-col flex justify-between text-xl font-bold gap-3 text-purple-600'>Quick Links
                         <span className='h-1 w-16 bg-purple-600 rounded-full'></span>
                     </h1>
