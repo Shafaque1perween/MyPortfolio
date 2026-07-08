@@ -12,9 +12,9 @@ import { LuDownload } from "react-icons/lu";
 
 const Hero = () => {
     return (
-        <div className=' flex justify-between items-center lg:px-20 px-4  sm:py-2  w-[300] h-120 ' id='home'>
+        <div className=' flex justify-center items-center lg:px-20 px-16   sm:py-2  w-full min-h-120 ' id='home'>
             {/* hero-rightside-content-start    */}
-            <div className='  flex flex-col justify-between  gap-4 px-4 py-4 h-90  md:w-[60%] w-full '>
+            <div className='  flex flex-col justify-between gap-4 px-4 pt-20 min-h-80  md:w-[60%] w-full '>
 
                 {/* hero-button */}
                 <div className='  flex justify-center items-center  shadow-2xl border border-purple-300 lg:w-70  md:w-60 w-50 h-10  px-2 py-1 rounded-full gap-3 text-purple-800 top-2.5 font-semibold '>
@@ -29,7 +29,7 @@ const Hero = () => {
                 {/* contact button */}
                 <div className='flex items-center justify-start gap-2'>
                     <a href='https://gym-web-ivory-eta.vercel.app' className='bg-purple-800    text-white flex lg:gap-3 gap-1 rounded-2xl lg:px-6  px-4  py-2 hover:bg-purple-900 cursor-pointer '>View My Work<span className=' text-xl py-1 '><GoArrowRight /></span></a>
-                    <a href='/public/Shafaque Perween_.pdf' download className='flex justify-center lg:gap-3 gap-1 lg:px-6  px-4 py-2 rounded-2xl  bg-purple-800 text-white hover:bg-purple-900  '>Download Cv<span className='  text-xl py-1'><LuDownload /></span></a>
+                    <a href='/Shafaque Perween_.pdf' download className='flex justify-center lg:gap-3 gap-1 lg:px-6  px-4 py-2 rounded-2xl  bg-purple-800 text-white hover:bg-purple-900  '>Download Cv<span className='  text-xl py-1'><LuDownload /></span></a>
 
                 </div>
                 {/* icons button */}
@@ -52,7 +52,7 @@ const Hero = () => {
             {/* hero-rightside-content-end    */}
 
             {/* hero-leftside-content-start    */}
-            <div className=' w-[40%] h-90 md:flex hidden justify-center items-center py-12 px-10  '>
+            <div className=' w-[40%] min-h-80 md:flex hidden justify-center items-center py-12 px-10  '>
                 <div className='relative z-0'>
                     {/* main imge */}
                     <img src={profile} className=' flex justify-center items-center text-center rounded-full  h-70 w-70' />
