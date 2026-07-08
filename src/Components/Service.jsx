@@ -42,7 +42,7 @@ const Service = () => {
                 {renderHeading}
             </div>
 
-            <div className=' py-4  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 flex-row justify-center items-center gap-6 z-3 bg-amber-900 '>
+            <div className=' py-4  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 flex-row justify-center items-center gap-6 z-3  '>
                 {renderService}
             </div>
 

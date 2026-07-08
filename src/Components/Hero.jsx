@@ -12,7 +12,7 @@ import { LuDownload } from "react-icons/lu";
 
 const Hero = () => {
     return (
-        <div className=' flex justify-center items-center lg:px-20 px-8   sm:py-2  w-full min-h-120 ' id='home'>
+        <div className=' flex justify-center items-center lg:px-20 px-4   sm:py-2  w-full min-h-120 ' id='home'>
             {/* hero-rightside-content-start    */}
             <div className='  flex flex-col justify-between gap-4 px-4 pt-20 min-h-80  md:w-[60%] w-full '>
 
