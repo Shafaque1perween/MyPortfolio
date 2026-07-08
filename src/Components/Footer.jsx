@@ -74,7 +74,7 @@ function Footer() {
             </div>
             <div className='text-gray-400 flex lg:flex-row flex-col gap-2 justify-between items-center px-8 py-4 bg-gray-900'>
                 <h2 cl>@2026 Shafaque. All rights reserverd</h2>
-                <h2 className='text-sm flex justify-between items-center gap-2'>Built with <span className='text-red-700'> <FaHeart/> </span> using <span className='text-purple-600'> React TailwindCSS </span></h2>
+                <h2 className='text-sm flex flex-row justify-between items-center gap-1'>Built with <span className='text-red-700'> <FaHeart/> </span> using <span className='text-purple-600'> React TailwindCSS </span></h2>
 
             </div>
 
