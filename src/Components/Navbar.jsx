@@ -21,8 +21,8 @@ const Navbar = () => {
     }
     return (
         <div>
-            <div className='fixed z-50 top-0 left-0 bg-purple-950 shadow-2xl w-full  h-16 flex justify-center items-center text-center lg:px-8 px-5 py-1 lg:gap-15 gap-10 md:gap-18 text-white'>
-                <div className='flex flex-1  justify-items-start items-center text-center gap-3'>
+            <div className='fixed z-50 top-0 left-0 bg-purple-950 shadow-2xl w-full  h-16 flex justify-center items-center text-center lg:px-8 px-5 py-1 lg:gap-15 gap-8 md:gap-18 text-white'>
+                <div className='flex flex-1  justify-items-start items-center text-center lg:gap-3 gap-1'>
                     <div className=' bg-purple-800 md:w-10 md:h-10 w-11 h-10 rounded-full flex justify-center items-center'>
                          <IoCodeSlash  className='text-white font-semibold text-xl'/>
                     </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
                     </li>
 
                 </ul>
-                <a href="mailto:alshafacoll246@gmail.com" className='flex  text-lg font-semibold  bg-purple-600 rounded-xl lg:px-4 px-2 lg:py-1 py-1  hover:bg-purple-900'>Hire Me</a>
+                <a href="mailto:alshafacoll246@gmail.com" className='flex  md:text-lg text-sm font-semibold  bg-purple-600 rounded-xl lg:px-4 px-2 lg:py-1 py-1  hover:bg-purple-900'>Hire Me</a>
 
                 <a href='' className='flex lg:hidden text-2xl font-bold hover:text-purple-800 ' onClick={toggleMenu}>{showMenu ? <IoCloseSharp /> : <BiMenu />}</a>
 

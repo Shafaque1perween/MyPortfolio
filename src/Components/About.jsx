@@ -30,7 +30,7 @@ const About = () => {
     })
     return (
 
-        <div className='  py-6 lg:px-20 px-8  flex flex-col justify-between w-full ' id='About'>
+        <div className='  py-6 lg:px-20 px-8  flex flex-col justify-center items-center w-full ' id='About'>
 
             {/* heading */}
             <div className='flex justify-center items-center text-center w-full h-8'>
@@ -71,7 +71,7 @@ const About = () => {
             </div>
 
           
-                <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 justify-between items-center gap-6 lg:px-8 px-2   '>
+                <div className='grid lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 justify-between   items-center gap-6 lg:px-8 px-2   '>
                     {renderCards}
                 </div>
         
