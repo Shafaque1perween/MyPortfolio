@@ -53,7 +53,7 @@ function Skills() {
                 <span  className='text-3xl text-purple-600 font-extrabold'><CiStar /></span>
                 </div>
                 <div className=' lg:px-10 px-10 '>
-                <div className='  grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 flex-row justify-between gap-3 items-center  '>
+                <div className='  grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 flex-row justify-between md:gap-3 gap-6 items-center  '>
                     {renderBtn}
                 </div>
             </div>
