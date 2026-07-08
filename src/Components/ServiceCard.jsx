@@ -3,7 +3,7 @@ import React from 'react'
 
 function ServiceCard({ icon: Icon, name, para }) {
   return (
-    <div className='md:w-85 w-80 bg-transparent md:h-50 h-45 px-4 py-4 shadow-2xl  border border-purple-300 flex flex-col md:gap-6 gap-1  rounded-2xl'>
+    <div className='md:w-85 w-80 bg-transparent md:h-50 h-45 px-4 py-4 shadow-2xl  border border-purple-300 flex flex-col md:gap-6 gap-1  rounded-2xl '>
       <div className='flex flex-col justify-between items-start'>
         <Icon className='bg-purple-300 h-12 w-12 rounded-full text-xl text-purple-600 flex justify-center items-center '>{Icon}</Icon>
 

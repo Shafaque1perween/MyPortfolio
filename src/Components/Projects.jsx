@@ -19,7 +19,7 @@ function Projects() {
         )
     })
     return (
-        <div className='flex flex-col justify-center items-center gap-2  py-4' id='project'>
+        <div className='flex flex-col justify-center items-center gap-2 px-4  py-4' id='project'>
             <div className='py-3'>
                 <Heading name1="Featured" name2="Projects" head="My Work" icon={IoBagHandleOutline} para1="Here are some of the project which have i worked on." para2="Each project is buit with attention to detail and a focus on user experience." />
 

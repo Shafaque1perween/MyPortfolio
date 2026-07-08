@@ -37,12 +37,12 @@ const Service = () => {
         )
     })
     return (
-        <div className=' flex flex-col justify-center items-center py-2  w-full h-auto lg:px-20 px-12  ' id='service'>
+        <div className=' flex flex-col justify-center items-center py-2  w-full h-auto px-4  ' id='service'>
             <div>
                 {renderHeading}
             </div>
 
-            <div className=' py-4  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 flex-row justify-center items-center gap-6 z-3  '>
+            <div className=' py-4  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 flex-row justify-center items-center gap-6 z-3 bg-amber-900 '>
                 {renderService}
             </div>
 
