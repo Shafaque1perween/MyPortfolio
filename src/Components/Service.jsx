@@ -37,7 +37,7 @@ const Service = () => {
         )
     })
     return (
-        <div className=' flex flex-col justify-center items-center py-2  w-full h-auto px-4 border-b border-b-purple-300  ' id='service'>
+        <section className=' flex flex-col justify-center items-center py-2  w-full h-auto px-4 border-b border-b-purple-300  ' id='service'>
             <div>
                 {renderHeading}
             </div>
@@ -55,7 +55,7 @@ const Service = () => {
 
             </div>
 
-        </div>
+        </section>
     )
 }
 

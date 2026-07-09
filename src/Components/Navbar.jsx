@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
 import { FiMail } from "react-icons/fi";
 import { BiMenu } from "react-icons/bi";
 import { IoCloseSharp } from "react-icons/io5";
@@ -10,8 +10,34 @@ import { IoCodeSlash} from "react-icons/io5";
 const Navbar = () => {
 
     const [showMenu, setShowMenu] = useState(false);
-    // const [activeTab, setActiveTab] = useState("home");
+   const [activeTab, setActiveTab] = useState("home");
+
+  useEffect(() =>{
+    const sections = document.querySelectorAll("section");
      
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setActiveTab(entry.target.id)
+
+            }
+        });
+    },{
+        threshold:0.5,
+    }
+);
+
+   sections.forEach((section) => observer.observe(section));
+
+   return() => {
+    sections.forEach((section) => observer.unobserve(section));
+   }
+
+
+
+  })
+
+
 
     const toggleMenu = (e) => {
         e.preventDefault()
@@ -35,21 +61,21 @@ const Navbar = () => {
 
                 <ul className={`hidden lg:flex flex-1 justify-between gap-1`}>
                     <li className=' hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 '>
-                        <a href='#home'>Home</a>
+                        <a href='#home' className={`${activeTab ==="home" ? "text-purple-500 font-bold" : " text-white"}`}>Home</a>
                     </li>
-                    <li className='  hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 '>
-                        <a href='#About'>About</a></li>
+                    <li className={`hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 {}`}   >
+                        <a href='#About' className={`${activeTab ==="About" ? "text-purple-500 font-bold" : " text-white"}`}>About</a></li>
                     <li className='  hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800'>
-                        <a href='#skills'>Skills</a>
+                        <a href='#skills' className={`${activeTab ==="skills" ? "text-purple-500 font-bold" : " text-white"}`}>Skills</a>
                     </li>
                     <li className=' hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 '>
-                        <a href='#project'>Projects</a> 
+                        <a href='#project' className={`${activeTab ==="project" ? "text-purple-500 font-bold" : " text-white"}`}>Projects</a> 
                     </li>
                     <li className='  hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 '>
-                        <a href='#service'>Services</a>
+                        <a href='#service' className={`${activeTab ==="service" ? "text-purple-500 font-bold" : " text-white"}`}>Services</a>
                     </li>
                      <li className='  hover:text-purple-800 py-4 px-2 hover:border-b hover:border-purple-800 '>
-                        <a href='#contact'>Contact</a>
+                        <a href='#contact' className={`${activeTab ==="contact" ? "text-purple-500 font-bold" : " text-white"}`}>Contact</a>
                     </li>
 
                 </ul>
@@ -65,19 +91,22 @@ const Navbar = () => {
 
                 <ul className=' justify-center items-center text-center gap-5'>
                     <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4  '>
-                        <a href='#'>Home</a>
+                        <a href='#home'>Home</a>
                     </li>
                     <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4  '>
-                        <a href='#'>About</a>
+                        <a href='#About'>About</a>
                     </li>
                     <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4  '>
-                        <a href='#'>Skills</a>
+                        <a href='#skills'>Skills</a>
                     </li>
                     <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4 '>
-                        <a href='#'>Projects</a>
+                        <a href='#project'>Projects</a>
                     </li>
                     <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4'>
-                        <a href='#'>Contact</a>
+                        <a href='#service'>Service</a>
+                    </li>
+                    <li className='text-lg font-semibold hover:text-purple-800 py-6 px-4'>
+                        <a href='#Contact'>Contact</a>
                     </li>
                     <li>
                         <a href='/public/Shafaque Perween_.pdf' download className='mt-30 lg:hidden flex gap-3 px-4 py-3  text-purple-600 hover:bg-purple-900 hover:text-white rounded-2xl  font-bold text-lg  '>Download Cv<span className='mt-2 text-2xl'><LuDownload /></span></a>
@@ -94,5 +123,6 @@ const Navbar = () => {
 
     )
 }
+
 
 export default Navbar

@@ -9,7 +9,7 @@ import { FaLocationDot } from 'react-icons/fa6';
 
 function Footer() {
     return (
-        <div className='bg-gray-950 text-gray-200 w-full px-12 py-6 '>
+        <section className='bg-gray-950 text-gray-200 w-full px-12 py-6 ' id='contact'>
             <div className='bg-gray-900 px-8 py-4 w-full flex-col md:flex-row flex justify-start items-start lg:gap-4 gap-6 border-b-2 border-b-gray-500'>
                 <div className=' md:w-[25%] w-full flex flex-col justify-start items-start py-2 gap-5'>
 
@@ -73,12 +73,12 @@ function Footer() {
                 </div>
             </div>
             <div className='text-gray-400 flex lg:flex-row flex-col gap-2 justify-between items-center px-8 py-4 bg-gray-900'>
-                <h2 cl>@2026 Shafaque. All rights reserverd</h2>
+                <h2 className='text-sm'>@2026 Shafaque. All rights reserverd</h2>
                 <h2 className='text-sm flex flex-row justify-between items-center gap-1'>Built with <span className='text-red-700'> <FaHeart/> </span> using <span className='text-purple-600'> React TailwindCSS </span></h2>
 
             </div>
 
-        </div>
+        </section>
 
     )
 }
