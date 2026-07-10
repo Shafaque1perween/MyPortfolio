@@ -1,4 +1,10 @@
 import React from 'react'
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
 import Heading from './Heading'
 import { FaExternalLinkAlt, FaLaptop } from "react-icons/fa";
 import profile from "../assets/profile.jpeg"
@@ -13,16 +19,17 @@ import { FaRocket } from "react-icons/fa6";
 import { FaRegHandshake } from "react-icons/fa";
 import { IoMdHappy } from "react-icons/io";
 import { RiShoppingBag4Line } from "react-icons/ri";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
 
 
 
 const About = () => {
 
-    const renderCards = details.map((item, index) => {
-        return (
-            <Cards key={index} name={item.name} icon={item.icon} para={item.para} />
-        )
-    })
+    // const renderCards = details.map((item, index) => {
+    //     return (
+    //         <Cards key={index} name={item.name} icon={item.icon} para={item.para} />
+    //     )
+    // })
     const renderTag = values.map((item, index) => {
         return (
             <Tag key={index} name={item.name} icon={item.icon} para={item.para} />
@@ -41,7 +48,7 @@ const About = () => {
 
             <div className=' flex justify-between items-start px-6 py-4 w-full h-full'>
 
-                 <div className='hidden lg:flex h-70 w-1/3 px-6 py-4   justify-center items-center '>
+                <div className='hidden lg:flex h-70 w-1/3 px-6 py-4   justify-center items-center '>
                     <img src={profile} className='h-60 w-60 rounded-2xl border-purple-800 border-2' />
 
                 </div>
@@ -70,11 +77,57 @@ const About = () => {
                 </div> */}
             </div>
 
-          
-                <div className='grid lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 justify-between   items-center gap-6 lg:px-8 px-2   '>
-                    {renderCards}
+
+            {/* <div className='grid lg:grid-cols-5 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 justify-between   items-center gap-6 lg:px-8 px-2   '>
+                {renderCards}
+            </div> */}
+               <div className=' flex justify-center items-center  py-2 w-full'> 
+                    <button className='custom-prev2 flex justify-center items-center text-black px-6 rounded-lg text-lg   hover:text-purple-600  hover:cursor-pointer'>
+                        <MdKeyboardArrowLeft />
+
+                    </button>
+
+
+
+
+                    <Swiper navigation={
+                        {
+                            nextEl: ".custom-next2",
+                            prevEl: ".custom-prev2"
+                        }
+                    }
+                        loop={true}
+                        breakpoints={{
+                           
+                            640: { slidesPerView: 2, spaceBetween: 20 },
+                            768: { slidesPerView: 3, spaceBetween: 20 },
+                            1024: { slidesPerView: 4, spaceBetween: 20 },
+                        }}
+
+
+                        modules={[Navigation]} className="mySwiper">
+                        {details.map((item, index) => {
+                            return (
+                                <SwiperSlide className=' gap-2  w-full lg:px-4 px-13'>
+
+                                    <Cards key={index} name={item.name} icon={item.icon} para={item.para} />
+                                </SwiperSlide>
+
+                            )
+                        })}
+                    </Swiper>
+
+                    <button className='custom-next2 flex justify-center items-center text-black px-6 rounded-lg   hover:text-purple-600  hover:cursor-pointer'>
+                        <MdKeyboardArrowRight />
+
+                    </button>
+
+                    {/* <button className='custom-next flex justify-center items-center text-black px-6 rounded-lg   hover:text-purple-600  hover:cursor-pointer'>
+                                    <MdKeyboardArrowRight />
+                
+                                </button> */}
+
                 </div>
-        
 
 
 
@@ -83,6 +136,9 @@ const About = () => {
                   {renderTag} 
          
                 </div>
+
+              
+
 
             </div>
         </section>
@@ -121,7 +177,7 @@ const details = [
         para: "Open to freelance opportunities",
     },
 ];
-const values =[
+const values = [
     {
         icon: RiShoppingBag4Line,
         name: '3+',
@@ -133,12 +189,12 @@ const values =[
         para: "Cleint Satisfaction",
     },
     {
-        icon: FaRocket ,
+        icon: FaRocket,
         name: "Fast",
         para: "On-Time Delivery",
     },
     {
-        icon: FaRegHandshake ,
+        icon: FaRegHandshake,
         name: "Freelancer",
         para: "Available for work",
     },
