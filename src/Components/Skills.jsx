@@ -75,7 +75,7 @@ function Skills() {
                 }
                     loop={true}
                     breakpoints={{
-                        640: { slidesPerView: 1, spaceBetween: 20 },
+                        340: { slidesPerView: 1, spaceBetween: 20 },
                         768: { slidesPerView: 2, spaceBetween: 20 },
                         1024: { slidesPerView: 3, spaceBetween: 20 },
                     }}
@@ -84,7 +84,7 @@ function Skills() {
                     modules={[Navigation]} className="mySwiper">
                     {skill.map((item, index) => {
                         return (
-                            <SwiperSlide className='flex justify-center items-center  py-6 '>
+                            <SwiperSlide className='flex justify-center items-center   py-6 '>
 
                                 <SkillCard key={index} name={item.name} icon={item.icon} tag1={item.tag1} tag2={item.tag2} tag3={item.tag3} tag4={item.tag4} tag5={item.tag5} />
 
@@ -139,7 +139,7 @@ function Skills() {
                     modules={[Navigation]} className="mySwiper">
                     {btn.map((item, index) => {
                         return (
-                            <SwiperSlide className='flex justify-center items-center text-center gap-2'>
+                            <SwiperSlide className='flex justify-center items-center text-center '>
 
                                 <Skillbtn key={index} name={item.name} icon={item.icon} />
                             </SwiperSlide>

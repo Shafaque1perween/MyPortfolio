@@ -108,7 +108,7 @@ const About = () => {
                         modules={[Navigation]} className="mySwiper">
                         {details.map((item, index) => {
                             return (
-                                <SwiperSlide className=' gap-2  w-full lg:px-4 px-13'>
+                                <SwiperSlide className=' gap-2  w-full lg:px-4 '>
 
                                     <Cards key={index} name={item.name} icon={item.icon} para={item.para} />
                                 </SwiperSlide>
